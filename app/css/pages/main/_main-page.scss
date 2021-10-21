@@ -82,19 +82,28 @@
             }
         }
     }
-    .games {
-        display: flex;
-        flex-wrap: wrap;
-        .item__games {
-            flex: 1 1 auto;
-            img {
-                width: 100%;
-                height: 250px;
-                transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
-                &:hover {
-                    transform: scale(1.1);
-                    box-shadow: 10px 30px 15px black;
+    .container-lg {
+        max-width: 1320px;
+        .games {
+            margin-top: 2rem;
+            &:last-child {
+                margin-top: 3px;
+            }
+            .item__games {
+                img {
+                    width: 100%;
+                    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: 10px 30px 15px black;
+                        z-index: 2;
+                        position: relative;
+                    }
                 }
+            }
+            .padding-none {
+                padding-right: 0px;
+                padding-left: 0px;
             }
         }
     }
