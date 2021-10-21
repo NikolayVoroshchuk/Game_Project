@@ -1,0 +1,62 @@
+.about-sublime {
+    background-color: $white;
+    .about__body {
+        margin-top: 2.25rem;
+        .about__title {
+            border-right: 1px solid $light-grey;
+            h1 {
+                font-size: 30px;
+                font-weight: 600;
+                color: $dim-gray;
+                height: 35px;
+                &:first-letter {
+                    font-size: 50px;
+                }
+            }
+            .about__subtitle {
+                @extend %first_letter;
+                span {
+                    height: 55px;
+                    font-size: 80px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .about__text {
+            span {
+                color: $zambezi;
+                font-weight: 300;
+            }
+        }
+
+        .about__items {
+            margin-top: 4.5rem;
+            .app__img {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                width: 50px;
+                height: 50px;
+                border: solid 2px $golden-poppy;
+                background-color: $whisper;
+                border-radius: 50%;
+                img {
+                    padding: 13px 7px;
+                }
+            }
+            .app__title {
+                margin-top: 1.5rem;
+                h4 {
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: 600;
+                }
+            }
+            .app__text {
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+    }
+}
