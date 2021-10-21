@@ -70,6 +70,12 @@
             font-size: 45px;
             font-weight: 600;
             @extend %first_letter;
+            &:first-letter {
+                font-size: 60px;
+            }
+            span {
+                font-size: 55px;
+            }
         }
     }
     .nav-item {
@@ -82,18 +88,85 @@
             }
         }
     }
-    .games {
-        display: flex;
-        flex-wrap: wrap;
-        .item__games {
-            flex: 1 1 auto;
-            img {
-                width: 100%;
-                height: 250px;
-                transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
-                &:hover {
-                    transform: scale(1.1);
-                    box-shadow: 10px 30px 15px black;
+    .container-lg {
+        max-width: 1320px;
+        .games {
+            margin-top: 2rem;
+            &:last-child {
+                margin-top: 3px;
+                padding-bottom: 5rem;
+            }
+            .item__games {
+                img {
+                    width: 100%;
+                    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: 10px 30px 15px black;
+                        z-index: 2;
+                        position: relative;
+                    }
+                }
+            }
+            .padding-none {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+.strategic-process {
+    padding-top: 3rem;
+    background-color: $white;
+    .strategic__title {
+        h1 {
+            font-size: 45px;
+            font-weight: 600;
+            @extend %first_letter;
+            &:first-letter {
+                font-size: 60px;
+            }
+            span {
+                font-size: 55px;
+            }
+        }
+    }
+    .strategic__text {
+        i {
+            color: $black;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 300;
+            color: $zambezi;
+        }
+    }
+    .strategy__items {
+        margin-top: 3rem;
+        .strategy__info {
+            .strategy__title {
+                margin-top: 1.813rem;
+                margin-bottom: 2rem;
+                h4 {
+                    font-size: 40px;
+                    font-weight: 600;
+                    &:first-letter {
+                        font-size: 50px;
+                    }
+                    span {
+                        font-size: 45px;
+                    }
+                }
+            }
+            .strategy__text {
+                i {
+                    color: $black;
+                }
+                span {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $zambezi;
                 }
             }
         }
