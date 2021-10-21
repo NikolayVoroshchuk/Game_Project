@@ -27,8 +27,8 @@
     }
 }
 .head__wrapper {
-    background: url(../../img/header/layer-5.png) 0 0 / cover no-repeat;
-    height: 650px;
+    background: url(../../img/header/layer-5.png) 0 0/100% auto no-repeat;
+    height: 700px;
     .head__title {
         color: $white;
         padding-top: 5rem;
