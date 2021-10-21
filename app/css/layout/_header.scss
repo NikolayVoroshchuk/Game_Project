@@ -1,0 +1,57 @@
+.sublime__title {
+    margin-top: 7rem;
+    h1 {
+        font-size: 150px;
+        font-weight: bold;
+        color: $white;
+        @extend %first_letter;
+    }
+}
+.sublime__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    color: $white;
+    @extend %first_letter;
+}
+.sublime__link {
+    margin-top: 1.875rem;
+    margin-bottom: 3rem;
+    a {
+        font-size: 18px;
+        color: $golden-poppy;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: $golden-poppy;
+        }
+    }
+}
+.head__wrapper {
+    background: url(../../img/header/layer-5.png) 0 0 / cover no-repeat;
+    height: 650px;
+    .head__title {
+        color: $white;
+        padding-top: 5rem;
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1;
+        }
+        span {
+            color: $golden-poppy;
+        }
+    }
+    .navbar {
+        margin-top: 3rem;
+        .nav-item {
+            a {
+                font-size: 18px;
+                color: $golden-poppy;
+                &:hover {
+                    text-decoration: underline;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
