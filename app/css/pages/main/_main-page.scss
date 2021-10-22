@@ -221,6 +221,7 @@
 
 .our-team {
     background-color: $white;
+    margin-bottom: 7rem;
     .team__title {
         padding-top: 6rem;
         h1 {
@@ -266,6 +267,69 @@
                 color: $zambezi;
                 font-weight: 300;
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+.testimonials {
+    background-color: $black;
+    .testimonial__body {
+        .testimonial__title {
+            padding-top: 3.5rem;
+            h1 {
+                font-size: 45px;
+                font-weight: 600;
+                color: $white;
+                @extend %first_letter;
+                &:first-letter {
+                    font-size: 60px;
+                }
+                span {
+                    font-size: 55px;
+                }
+            }
+        }
+        .testimonial__text {
+            margin-top: 4rem;
+            p {
+                color: $white;
+                font-size: 16px;
+            }
+            span {
+                font-size: 18px;
+                font-weight: 300;
+                color: $white;
+            }
+        }
+        .testimonial__person {
+            .testimonail__img {
+                display: flex;
+                justify-content: center;
+                background-color: $black;
+                overflow: overlay;
+                img {
+                    padding: 5px;
+                    border: solid 3px $golden-poppy;
+                    border-radius: 50%;
+                }
+            }
+            .testimonial__name {
+                text-align: center;
+                margin-top: 1rem;
+                span {
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+            .testimonial__position {
+                text-align: center;
+                i {
+                    color: $white;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
             }
         }
     }
