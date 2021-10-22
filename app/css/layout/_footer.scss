@@ -1,0 +1,48 @@
+.footer {
+    background: url(../../img/footer/img1.png) 0 0 / cover no-repeat;
+    height: 650px;
+    .footer__title {
+        padding-top: 8rem;
+        h4 {
+            font-size: 60px;
+            font-weight: 600;
+            color: $white;
+            @extend %first_letter;
+            &:first-letter {
+                font-size: 80px;
+            }
+        }
+    }
+    .navbar {
+        padding-bottom: 0rem;
+        .nav {
+            .social__links {
+                padding: 0.5rem 1rem;
+                border-top: 2px solid $golden-poppy;
+                margin-top: 3.25rem;
+            }
+        }
+        .nav-item {
+            a {
+                font-size: 16px;
+                font-weight: 600;
+                color: $white;
+                &:hover {
+                    color: $golden-poppy;
+                }
+            }
+        }
+    }
+    .tagline {
+        padding-top: 5rem;
+        h1 {
+            font-size: 110px;
+            font-weight: bold;
+            color: $white;
+            @extend %first_letter;
+            span {
+                color: $golden-poppy;
+            }
+        }
+    }
+}
