@@ -118,6 +118,7 @@
 
 .strategic-process {
     padding-top: 3rem;
+    padding-bottom: 4rem;
     background-color: $white;
     .strategic__title {
         h1 {
@@ -160,13 +161,58 @@
                 }
             }
             .strategy__text {
-                i {
+                p {
                     color: $black;
+                    font-weight: 300;
+                    font-size: 16px;
                 }
                 span {
                     font-size: 16px;
                     font-weight: 300;
                     color: $zambezi;
+                }
+            }
+        }
+    }
+}
+
+.services {
+    background: url(../../../img/services/Layer\ 25.png) 0 0/100% auto no-repeat;
+    height: 500px;
+    .services__title {
+        padding-top: 4rem;
+        h1 {
+            font-size: 45px;
+            font-weight: 600;
+            color: $white;
+            @extend %first_letter;
+            &:first-letter {
+                font-size: 60px;
+            }
+            span {
+                font-size: 55px;
+            }
+        }
+    }
+    .sevices__info {
+        margin-top: 10rem;
+        .info__body {
+            .info__title {
+                margin-bottom: 1.625rem;
+                margin-top: 4rem;
+                &:first-child {
+                    margin-top: 0rem;
+                }
+                h4 {
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+            .info__text {
+                span {
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 300;
                 }
             }
         }
