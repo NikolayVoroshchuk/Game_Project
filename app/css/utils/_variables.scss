@@ -10,11 +10,13 @@ $golden-poppy: #ffc600;
 $persian-blue: #2046b3;
 // 2. Breakpoints
 // ========================================
+$screen-xs: 529.98px;
 $screen-sm: 575.98px;
 $screen-md: 767.98px;
 $screen-lg: 991.98px;
 $screen-xl: 1199.98px;
 
+$max-screen-xs: "all and (max-width: #{$screen-xs})";
 $max-screen-sm: "all and (max-width: #{$screen-sm})";
 $max-screen-md: "all and (max-width: #{$screen-md})";
 $max-screen-lg: "all and (max-width: #{$screen-lg})";
