@@ -275,6 +275,7 @@
 .testimonials {
     background-color: $black;
     .testimonial__body {
+        padding-bottom: 7rem;
         .testimonial__title {
             padding-top: 3.5rem;
             h1 {
@@ -329,6 +330,55 @@
                     color: $white;
                     font-weight: 300;
                     font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.blogs {
+    background-color: $white;
+    .blog__body {
+        padding-bottom: 7rem;
+        .blog__title {
+            padding-top: 3.75rem;
+            h1 {
+                font-size: 40px;
+                font-weight: 600;
+                color: $black;
+                @extend %first_letter;
+                &:first-letter {
+                    font-size: 50px;
+                }
+            }
+        }
+        .navbar {
+            padding-top: 11rem;
+            .nav-item {
+                a {
+                    font-size: 18px;
+                    color: $black;
+                    &:hover {
+                        color: $golden-poppy;
+                    }
+                }
+            }
+        }
+        .blog__items {
+            padding-top: 3.75rem;
+            .items__body {
+                .item__date {
+                    margin-top: 10px;
+                    font-size: 18px;
+                    color: $golden-poppy;
+                }
+                .item__title {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                .item__text {
+                    margin-top: -5px;
+                    width: 200px;
                 }
             }
         }
